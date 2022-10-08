@@ -1,3 +1,3 @@
-## A Dark theme Portfolio UI inspiration made with Tailwind CSS
+## A Creepy website showing the hunters and creatures in Supernatural TV series
 
-![My Image](img/full-shot.png)
+<!-- ![My Image](img/full-shot.png) -->
