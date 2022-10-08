@@ -23,4 +23,28 @@ const hunters = [
 		about:
 			"Robert Steven 'Bobby' Singer (August 12, 1950 - 2012) was a veteran hunter, an old friend of John,[1] and over time evolved into a father-figure for John's sons Sam and Dean. He is also one of the longest lasting recurring characters, apart from Sam and Dean. ",
 	},
+	{
+		name: "Samuel Campbell",
+		image: "/img/samuel_campbell.webp",
+		about:
+			"Samuel Campbell was a hunter married to Deanna Campbell. He was the father of Mary Winchester and the maternal grandfather of Sam and Dean Winchester. He also served as a vessel for the Prince of Hell Azazel so he could make his deal with Mary. After The Apocalypse, Samuel was resurrected by Crowley to help him find Purgatory, but was killed again by Sam when he was possessed by the Khan worm.. ",
+	},
+	{
+		name: "Deanna Campbell",
+		image: "/img/deanna_campbell.jpg",
+		about:
+			"Deanna and her husband Samuel Campbell were hunters who raised their daughter Mary as a hunter as well. How and why Deanna became a supernatural hunter is unknown. ",
+	},
+	{
+		name: "Gwen Campbell",
+		image: "/img/gwen_campbell.jpg",
+		about:
+			"Gwen Campbell was a third cousin of Sam and Dean Winchester. She hunted with Christian Campbell, Mark Campbell and Samuel Campbell, her cousins. ",
+	},
+	{
+		name: "Christian Campbell",
+		image: "/img/christian_campbell.jpg",
+		about:
+			"Christian Campbell was a hunter, and a third cousin of Sam and Dean Winchester. He later became possessed by a demon. ",
+	},
 ];
