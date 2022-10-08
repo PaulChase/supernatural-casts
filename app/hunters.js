@@ -47,4 +47,16 @@ const hunters = [
 		about:
 			"Christian Campbell was a hunter, and a third cousin of Sam and Dean Winchester. He later became possessed by a demon. ",
 	},
+	{
+		name: "Ellen Harvelle",
+		image: "/img/ellen_harvelle.jpg",
+		about:
+			"Ellen Harvelle was a retired hunter who ran a saloon called Harvelle's Roadhouse that her fellow hunters often visited. It was destroyed by demons in All Hell Breaks Loose - Part 1, at which point she resumed hunting. Ellen hunted with and was married to Bill Harvelle prior to his death.",
+	},
+	{
+		name: "Jo Harvelle",
+		image: "/img/jo_harvelle.jpg",
+		about:
+			"Joanna Beth 'Jo' Harvelle (April 7, 1985 - 2009), was the daughter of hunters Bill and Ellen Harvelle. After her father's death, Jo became a hunter in his memory. Although she fulfilled her dream, she died while saving Dean and Sam from a hellhound set upon them by the demon Meg. ",
+	},
 ];

@@ -22,11 +22,13 @@
 		<script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
 
 		<script src="/app/hunters.js"></script>
+		<script src="/app/creatures.js"></script>
 
 		<script>
 			document.addEventListener("alpine:init", () => {
 				Alpine.data("data", () => ({
 					hunters: hunters.sort((a, b) => a.name.localeCompare(b.name)),
+					creatures: creatures.sort((a, b) => a.name.localeCompare(b.name)),
 				}));
 			});
 		</script>
@@ -107,6 +109,64 @@
 									<div class="px-4 py-6 lg:self-center">
 										<h2 class="text-xl mb-3 lg:text-3xl" x-text="hunter.name"></h2>
 										<p class="text-lg lg:text-xl" x-text="hunter.about"></p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</template>
+				</div>
+
+				<h3 class="md:text-2xl lg:text-3xl text-xl font-bold mb-6 mt-12">Creatures</h3>
+
+				<div class="grid grid-cols-1 gap-8 md:grid-cols-3 lg:grid-cols-4">
+					<template x-for="(creature, index) in creatures" :key="index">
+						<div x-data="{ showModal: false}">
+							<div
+								class="bg-gray-900 rounded-md hover:-translate-y-2 transition-all cursor-pointer ease-linear"
+								@click="showModal = true"
+							>
+								<img :src="creature.image" alt="" srcset="" class="h-60 w-full object-cover rounded-t-md" />
+								<div class="px-2 py-4">
+									<h2 class="text-lg" x-text="creature.name"></h2>
+								</div>
+							</div>
+
+							<!-- the modal -->
+							<div
+								x-show="showModal"
+								x-transition:enter.duration.500ms
+								x-transition:leave.duration.100ms
+								x-cloak
+								class="fixed bg-black/90 top-0 left-0 w-full h-full z-40 px-4 py-8 flex flex-col justify-center items-center lg:px-14 overflow-auto"
+							>
+								<div class="flex justify-end py-3 self-end">
+									<button @click="showModal = false">
+										<svg
+											xmlns="http://www.w3.org/2000/svg"
+											fill="none"
+											viewBox="0 0 24 24"
+											stroke-width="1.5"
+											stroke="currentColor"
+											class="w-10 h-10 hover:text-gray-300"
+										>
+											<path
+												stroke-linecap="round"
+												stroke-linejoin="round"
+												d="M9.75 9.75l4.5 4.5m0-4.5l-4.5 4.5M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
+											/>
+										</svg>
+									</button>
+								</div>
+								<div class="bg-gray-900 rounded-md max-w-5xl mx-auto grid lg:grid-cols-2 lg:gap-x-12">
+									<img
+										:src="creature.image"
+										alt=""
+										srcset=""
+										class="h-72 lg:h-[30rem] w-full object-cover rounded-t-md"
+									/>
+									<div class="px-4 py-6 lg:self-center">
+										<h2 class="text-xl mb-3 lg:text-3xl" x-text="creature.name"></h2>
+										<p class="text-lg lg:text-xl" x-text="creature.about"></p>
 									</div>
 								</div>
 							</div>
